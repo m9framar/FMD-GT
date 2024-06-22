@@ -2,14 +2,12 @@
 
 ## Usage Instructions
 
-To use the `BRD_runnable.py` script, follow these steps:
-
-1. 
+`BRD_runnable.py` is used to generate final strategy distributions by applying e-BRD. there are 3 running modes that were used for the final testing.
 
 
-To use the `data_read.py` script, follow these steps:
+`data_read.py` is used to analyze the results, generating various plots using `GT_charts.py`, mainly the last 4 examining modes are used.
 
-1. 
+Be aware that the main script uses all available cpu cores when running.
 
 
 

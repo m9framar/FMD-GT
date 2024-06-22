@@ -170,7 +170,6 @@ def read_equilibra(file_name,poa_array,pos_array,social_p):
             return
         newstring=dataset+"-10"+others+str(altr)    
         read_equilibra(newstring,poa_array,pos_array,social_p)
-#HA RÁNÉZÖNK EGY GRAFÁRA AKKOR A MTERIKÁI ALAPJÁN MEG LEHET-E HATÁROZNI HOGY MELY CSUCSOKNAK KELL ALTRUIZMUST ADNI
 def read_binary(newstring):
     print("Reading from: "+newstring)
     objects=[]
