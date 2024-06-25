@@ -32,10 +32,12 @@ def brd_setup_and_run(filename, I, f, L2, slowmode, p, altr,altr_value,local_alt
    #User.altruism_value_base=altr_value
     if preset_users==None:
         eu_users=generate_users(I,User,altr,L2,p,altr_coef=altr_value,selection_mode=selection_mode,bc_threshold=bc_threshold)
-        users_original=copy.deepcopy(eu_users)
+        #users_original=copy.deepcopy(eu_users)
+        users_original=eu_users.copy()
     else:
         eu_users=preset_users
-        users_original=copy.deepcopy(eu_users)  
+        #users_original=copy.deepcopy(eu_users)
+        users_original=eu_users.copy()  
     # logging.debug("starting new cycle with:%d %d %d. Altrusim coefficent: %f",p,altr[0],altr[1],altr_value)
     # logging.info("run parameters: local altruism: %d selection mode: %d bc_threshold: %f",local_altruism,selection_mode,bc_threshold)
     dictionary_update(eu_users,p_values)
